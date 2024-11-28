@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-@st.cache
+@st.cache_data
 def get_data():
     return pd.read_csv("data.csv")
 
